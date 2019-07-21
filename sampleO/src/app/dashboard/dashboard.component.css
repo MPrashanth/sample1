@@ -1,0 +1,16 @@
+.maincontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  70px 600px;
+    grid-template-areas: "topbar" "content";
+}
+
+.topbar{
+    grid-area: topbar; 
+     background-color: #96adc5;
+}
+
+.content{
+    grid-area: content; 
+    background-color: #c592bd;
+}

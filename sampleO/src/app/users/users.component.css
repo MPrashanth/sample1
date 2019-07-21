@@ -1,0 +1,16 @@
+.maincontainer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:  500px;
+    grid-template-areas: "leftbar rightbar";
+}
+
+.leftbar{
+    grid-area: leftbar; 
+     background-color: #434d58;
+}
+
+.rightbar{
+    grid-area: rightbar; 
+    background-color: #c5b8c2;
+}

@@ -1,0 +1,75 @@
+.admin-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 110%;
+    text-decoration-color: white;
+  }
+  /* .adminform .mat-input-placeholder {
+    text-decoration-style:#fff;
+}
+.adminform .mat-form-field-underline{
+
+  background-color: white;
+
+} */
+
+.adminform {
+    width: 100%;
+  }
+.row{
+
+
+  padding-top: 180px;
+    
+}
+.admin{
+  text-align: center;
+}
+.admin h2{
+  color: #222;
+  margin-top: -15px;
+}
+.loginbg{
+  background-image: url('../../assets/beautiful.jpg');
+  background-size: 1350px;
+  position: cover;
+  height: 650px;
+
+}
+.container{
+  height: 330px;
+  background-color:rgba(255,255,255,0.8);
+
+  width: 400px;
+  padding: 50px;
+}
+ .loginbtn .btn{
+   border-radius: 5px;
+   width: 300px;
+   border: none;
+   margin-top: 10px;
+   
+ }
+.loginbtn .btn-success {
+  color: rgb(7, 2, 2);
+  
+background-color: rgba(204, 211, 202, 0.678);
+  margin-top: 14px;
+  padding-bottom: -8px;
+  
+  box-shadow: 0px 0px 4px 0px rgb(124, 94, 124);
+  
+}
+/* .forgot .forgotpwd{
+  float: right;
+ 
+
+} */
+.forgotpwd{
+  float: right;
+  text-decoration-style: none;
+}
+.errormessage{
+  float: right;
+ 
+}

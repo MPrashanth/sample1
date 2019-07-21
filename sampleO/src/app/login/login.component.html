@@ -1,0 +1,61 @@
+
+<div class="loginbg">
+  <div class="row">
+    
+        
+
+      <div class="container " >
+        <div class="admin"><h2> Administrator Login</h2></div>
+        <div class="rowform">
+          <form class="admin-form" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+                            
+                                      <!-- Username -->
+
+            <mat-form-field class="adminform">
+              <input matInput placeholder="Enter your username" formControlName="username" 
+              class="form-control" [errorStateMatcher]="matcher">
+
+              <mat-error class="errormessage">  
+                  <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched">Please enter Username !!!</span>  
+              </mat-error>
+            
+            </mat-form-field>
+                                  
+            
+                                          <!-- Password -->
+
+            <mat-form-field class="adminform">
+              <input matInput placeholder="Enter your password" formControlName="password" class="form-control"
+              [errorStateMatcher]="matcher" [type]="hide ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <mat-error class="errormessage">  
+                    <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">Please enter Password !!!</span>  
+                </mat-error>
+            </mat-form-field>
+
+            <div class="forgot">
+              
+                <mat-checkbox>Remember me!</mat-checkbox>
+              
+              
+                <a class="forgotpwd" routerLink="\Forgot Password" (click)="forgotpassword">Forgot password?</a>
+              
+            </div><br>
+            
+            <div class="pull-right loginbtn">
+                
+                <input type="button" class="btn btn-success" value="Submit" (click) = "login();">
+            </div>
+          
+              
+          </form>
+          <div>
+
+          </div>
+         
+           
+          
+        </div>
+      </div>
+  </div>
+</div>
